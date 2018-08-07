@@ -4,8 +4,8 @@ module.exports = function(server) {
   // Install a `/` route that returns server status
   var router = server.loopback.Router();
   router.get('/', server.loopback.status());
-  router.get('/ping', function(req, res) {
-    res.send('pongaroo');
+  router.get('/hello', function(req, res) {
+    res.send('Hello World');
   });
   router.get('/fibonacci', function(req, res) {
     let fibnum = 20;
